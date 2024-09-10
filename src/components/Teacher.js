@@ -62,7 +62,6 @@ const Teacher = () => {
 
   return (
     <div className="teacher-container">
-      {/* Left section for kicking students and past polls */}
       <div className="teacher-left w-1/4 bg-gray-100 p-4 shadow-lg">
         <h2 className="text-2xl mb-4">Teacher Panel</h2>
 
@@ -181,10 +180,13 @@ const Teacher = () => {
           </ul>
         </div>
 
-        {/* Chat Component */}
-        <div className="fixed right-0 bottom-0 chat-container w-1/4 bg-gray-800 p-4 shadow-lg">
-          <Chat username="Teacher" />
-        </div>
+        {/* <div className="absolute right-4 bottom-4 chat-container w-80 bg-gray-800 p-4 shadow-lg rounded-md">
+  <Chat username="Teacher" />
+</div> */}
+
+<Chat username="Teacher" />
+
+
       </div>
     </div>
   );

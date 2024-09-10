@@ -123,7 +123,7 @@ const Student = () => {
           )}
 
           <h3 className="text-xl font-semibold mb-2">Poll Results:</h3>
-          <ul className="list-disc pl-5">
+          <ul className="list-disc pl-5 max-h-24 overflow-y-auto">
             {Object.entries(pollResults).length > 0 ? (
               Object.entries(pollResults).map(([option, count]) => (
                 <li key={option} className="mb-1">
@@ -135,10 +135,7 @@ const Student = () => {
             )}
           </ul>
 
-          {/* Chat Component */}
-          <div className="fixed right-0 top-0 chat-container w-1/4 bg-gray-800 p-4 shadow-lg">
-            <Chat username={name} />
-          </div>
+          <Chat username={name} />
         </div>
       )}
     </div>
